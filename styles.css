@@ -207,8 +207,7 @@ body {
 footer {
     text-align: center;
     height: 50px; /* Adjust height */
-/*    background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);*/
-background: linear-gradient(to right, #555555, #1E90FF, #8A2BE2, #FFA500, #808080, #555555); /* Dark grey to blue to violet to orange to grey to dark grey gradient */
+    background: linear-gradient(to right, #555555, #1E90FF, #8A2BE2, #FFA500, #808080, #555555); /* Dark grey to blue to violet to orange to grey to dark grey gradient */
     border-radius: 10px 10px 0 0;
     position: fixed; /* Make the footer fixed at the bottom */
     bottom: 0;
@@ -242,4 +241,19 @@ background: linear-gradient(to right, #555555, #1E90FF, #8A2BE2, #FFA500, #80808
         display: block;
         padding: 10px 0;
     }
+
+    footer {
+        font-size: 1rem; /* Adjust font size for tablets */
+        height: 60px; /* Adjust height for tablets */
+        padding: 5px 10px 10px 10px; /* Adjust padding for tablets */
+    }
 }
+
+@media (max-width: 480px) {
+    footer {
+        font-size: 0.9rem; /* Adjust font size for mobile */
+        height: 70px; /* Adjust height for mobile */
+        padding: 10px 10px 15px 10px; /* Adjust padding for mobile */
+    }
+}
+
