@@ -1,48 +1,53 @@
-/* Importing a unique font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+/* Importing unique fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap');
 
 /* General Styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #ffffff;
-    background: linear-gradient(135deg, #2c3e50, #3498db); /* Dark blue to light blue gradient */
+    background: linear-gradient(135deg, #2c3e50, #3498db);
 }
 
 /* Wrapper Styles */
 .wrapper {
     max-width: 1200px;
-    margin: 20px auto; /* Center content with some margin on sides */
+    margin: 20px auto;
     padding: 20px;
     box-sizing: border-box;
-    background-color: rgba(236, 240, 241, 0.7); /* Slightly opaque light grey background */
+    background-color: rgba(236, 240, 241, 0.85);
     border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Header Styles */
 .header {
     text-align: center;
     padding: 50px 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border-radius: 10px;
+    color: #ffffff;
 }
 
 .header h1 {
     font-size: 2.5rem;
-    color: #1f3a6c; /* Darker blue color for the header text */
+    color: #ffffff;
     margin: 0;
-    font-family: 'Roboto', sans-serif; /* Unique font for the header text */
-    font-weight: 700; /* Bold font weight */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Profile Picture Styles */
 .profile-pic {
-    width: 250px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 15px; /* Curved corners */
-    margin: 20px auto; /* Center-align and margin on top and bottom */
-    display: block; /* Ensure it's centered */
-    border: 2px solid rgba(255, 255, 255, 0.5); /* White border with transparency */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
-    background-color: rgba(255, 255, 255, 0.3); /* Transparent white background */
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px auto;
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* Navbar Styles */
@@ -53,49 +58,52 @@ body {
 
 .navbar {
     display: inline-block;
-    background-color: #34495e; /* Dark grey background for navbar */
+    background-color: #34495e;
     border-radius: 8px;
     padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .navbar a {
-    color: #ecf0f1; /* Light grey color for links */
+    color: #ecf0f1;
     text-decoration: none;
     font-size: 1.2rem;
     padding: 15px 20px;
     display: inline-block;
     transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
-    font-weight: 600; /* Medium-bold font weight */
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
 }
 
 .navbar a:hover {
-    background-color: #2c3e50; /* Slightly darker grey on hover */
-    color: #3498db; /* Light blue color on hover */
-    border-radius: 15px; /* Curved corners on hover */
+    background-color: #2c3e50;
+    color: #3498db;
+    border-radius: 15px;
+    transform: translateY(-2px);
 }
 
 /* Content Section Styles */
 .content {
     margin: 20px 0;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.2); /* Transparent white background for content */
-    border-radius: 10px; /* Rounded corners for content sections */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for definition */
+    padding: 20px 40px; /* Add padding for spacing */
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .content p {
-    color: #2c3e50; /* Darker color for content text */
-    font-weight: 500; /* Medium-bold font weight for paragraphs */
+    color: #2c3e50;
+    font-weight: 400;
+    margin-bottom: 1.5em; /* Add margin for spacing */
 }
 
 .content ul, .content ol {
-    color: #2c3e50; /* Darker color for list items */
-    font-weight: 500; /* Medium-bold font weight for list items */
-}
-
-.content li {
-    font-weight: 500; /* Medium-bold font weight for list items */
+    color: #2c3e50;
+    font-weight: 400;
+    margin-left: 2em; /* Add margin for spacing */
+    margin-bottom: 1.5em; /* Add margin for spacing */
 }
 
 /* Curved Rectangle Behind Section Headings */
@@ -103,43 +111,33 @@ body {
     position: relative;
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #1f3a6c; /* Darker blue color for section headings */
-    padding: 10px 20px; /* Padding to create space inside the curved rectangle */
-    background-color: rgba(255, 255, 255, 0.7); /* Darker semi-transparent white background for the curved rectangle */
-    border-radius: 15px; /* Rounded corners for the curved rectangle */
-    display: inline-block; /* Adjust width based on content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    font-family: 'Roboto', sans-serif; /* Unique font for the section headings */
-    font-weight: 700; /* Bold font weight */
+    color: #1f3a6c;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-top: 1em; /* Add margin for spacing */
 }
 
 /* Specific Styles for Sub-Headings in Content */
 .content h3 {
-    color: #1e2a39; /* Darker color for sub-headings */
-    font-weight: 600; /* Bold font weight */
+    color: #1e2a39;
+    font-weight: 600;
+    margin-top: 1em; /* Add margin for spacing */
+    margin-bottom: 1em; /* Add margin for spacing */
 }
 
 /* Gallery Section Styles */
 .gallery-section {
     margin: 20px 0;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for definition */
-}
-
-.gallery-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #1f3a6c; /* Darker blue color for section headings */
-    padding: 10px 20px; /* Padding to create space inside the curved rectangle */
-    background-color: rgba(255, 255, 255, 0.7); /* Darker semi-transparent white background for the curved rectangle */
-    border-radius: 15px; /* Rounded corners for the curved rectangle */
-    display: inline-block; /* Adjust width based on content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    font-family: 'Roboto', sans-serif; /* Unique font for the section headings */
-    font-weight: 700; /* Bold font weight */
+    background: linear-gradient(to right, #f7b42c, #fc575e);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .gallery {
@@ -153,7 +151,8 @@ body {
     width: 300px;
     height: auto;
     border-radius: 8px;
-    border: 2px solid rgba(255, 255, 255, 0.3); /* Subtle border for definition */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* YouTube Videos Styles */
@@ -168,77 +167,79 @@ body {
     width: 560px;
     height: 315px;
     border-radius: 8px;
-    border: 2px solid #34495e; /* Dark grey border for videos */
+    border: 2px solid #34495e;
 }
 
 /* Contact Section Styles */
 #contact {
-    background-color: rgba(255, 255, 255, 0.2); /* Transparent white background for contact */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Add padding inside the contact section */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for definition */
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #contact p {
     font-size: 1.1rem;
-    color: #2c3e50; /* Darker color for contact text */
-    font-weight: 500; /* Medium-bold font weight */
+    color: #2c3e50;
+    font-weight: 400;
 }
 
 /* Social Media Section Styles */
 #social {
-    background-color: rgba(255, 255, 255, 0.2); /* Transparent white background for social media */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Add padding inside the social media section */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for definition */
-}
-
-#social p {
-    font-size: 1.1rem;
-    color: #2c3e50; /* Darker color for social media text */
-    font-weight: 500; /* Medium-bold font weight */
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #social a {
-    color: #3498db; /* Light blue color for social media links */
+    color: #3498db;
     text-decoration: none;
 }
 
 #social a:hover {
-    color: #2c3e50; /* Dark blue color on hover */
+    color: #2c3e50;
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
+    height: 50px; /* Adjust height */
+/*    background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);*/
+background: linear-gradient(to right, #555555, #1E90FF, #8A2BE2, #FFA500, #808080, #555555); /* Dark grey to blue to violet to orange to grey to dark grey gradient */
+    border-radius: 10px 10px 0 0;
+    position: fixed; /* Make the footer fixed at the bottom */
     bottom: 0;
-    width: 100%;
-    background-color: #34495e; /* Dark grey background for footer */
-    color: #ecf0f1; /* Light grey color for footer text */
+    left: 0;
+    right: 0;
     animation: slide 10s infinite linear;
+    font-size: 1.2rem; /* Adjust font size */
+    padding: 0px 10px 5px 10px; /* Add padding for spacing */
+    box-sizing: border-box; /* Ensure padding doesn't affect total height */
 }
 
+
+/* Keyframes for footer animation */
 @keyframes slide {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
 }
 
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .gallery img {
-        width: 100%; /* Full width for smaller screens */
+        width: 100%;
     }
 
     .videos iframe {
-        width: 100%; /* Full width for videos on smaller screens */
+        width: 100%;
     }
 
     .navbar a {
-        display: block; /* Stack navbar links vertically */
-        padding: 10px 0; /* Adjust padding */
+        display: block;
+        padding: 10px 0;
     }
 }
